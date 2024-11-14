@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400&family=Kanit:wght@700&display=swap');
+
+/*Page layout*/
+header,main,footer{
+    max-width: 84ch; 
+    margin: 0 auto; /*centred in the browser window*/
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+/*Colours & Typography*/
+body{
+    font-family:'Crimson Text';
+    font-size: 14pt;
+}
+
+nav,h1,h2{
+    font-family: 'Kanit';
+}
+
+
+
+/*header*/
+header{
+    background-image:url("picture/chessboxing_background.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header h1{
+    color:white;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+/*Navbar*/
+nav ul{
+    list-style-type: none;
+    padding:0 ;
+    margin:0;
+    display: flex;
+    justify-content: flex-end;/*aligned right */
+
+}
+nav ul li {
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #fff6; 
+    color: yellow; 
+}
+
+/*Floating elements*/
+.text-right{
+    border:3px solid rgba(158, 158, 163, 0.4);
+    border-radius: 40px;
+    float:right;
+}
+
+
+
+.video-right{
+    border:3px solid rgba(158, 158, 163, 0.4);
+    border-radius: 40px;
+    float: right;
+    
+    padding: 20px;
+    
+}
+
+
+.container{
+    border:3px solid rgba(158, 158, 163, 0.4);
+    border-radius: 40px;
+    height: 520px;
+}
+
+.picture-right figure{
+    position: relative;
+    left:295px;
+    bottom:330px;
+}
+
+.tablep{
+    text-align: center;
+}
+th{
+    border-top:1.5px solid rgba(158, 158, 163, 0.4);
+}
+th,td{
+    border-bottom: 1.5px solid rgba(158, 158, 163, 0.4);
+    line-height: 2;
+}
+
+.rules ul{
+    line-height: 2;
+}
+
+.training ul{
+    line-height: 2;
+}
+/*footer design*/
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+/*small display*/
+@media (max-width: 600px) {
+    header,main,footer {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;/*rendered vertically*/
+        align-items: end;
+    }
+
+    .first figure img{
+        width: 100%;
+        height: auto;
+    }
+    .text-right{
+        width:100%;
+    }
+    
+    .video-right{
+        width:100%;
+    }
+
+    .video{
+        width:90%;
+        height:auto;
+    }
+    
+    
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    
+    .picture-right figure{
+        position: relative;
+        top:20px;
+        left: 10px;
+        width: 100%;
+        height: auto;
+    }
+    .picture-right img{
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+
+
+
+
